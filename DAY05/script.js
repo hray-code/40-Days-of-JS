@@ -37,6 +37,38 @@ for(let i=1; i <= 10; i++){
 
 };
 
-/*Task #3: Find the summation of all odd numbers between 1 to 500 and print them on the console log.
-
+/*Task #3: Find the summation of all odd numbers between 1 to 500 
+and print them on the console log.
 */
+for(let i = 1; i <= 500; i++){
+    if(i % 2 != 0){
+        console.log(i);
+    }
+};
+
+/*Task #4: Skipping Multiples of 3.
+Write a program to print numbers from 1 to 20, but skip multiples of 3.
+*/
+for(let i = 1; i <= 20; i++){
+    if(i % 3 != 0){
+        console.log(i);
+    };
+};
+
+/*Task #5: Reverse Digits of a Number (Using while loop).
+Write a program to reverse the digits of a given number using a while loop. Example:
+Input: 6789
+Output: 9876
+*/
+
+let input = String(1234567890); //used only for condition
+let newString = input; //holds mutable numbers
+let output = "";
+let i = 1;
+
+while(i <= input.length){
+    output += newString[newString.length -1]; //add last number to output
+    newString = newString.slice(0, -1); //remove last number from newString
+    i++;
+};
+console.log(Number(output));
