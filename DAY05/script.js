@@ -61,7 +61,7 @@ Input: 6789
 Output: 9876
 */
 
-let input = String(1234567890); //used only for condition
+let input = String(1234567890123); //used only for condition
 let newString = input; //holds mutable numbers
 let output = "";
 let i = 1;
@@ -72,3 +72,21 @@ while(i <= input.length){
     i++;
 };
 console.log(Number(output));
+
+/*Task #6:
+Write your understanding on the differences between for, while, and do-while loop. 
+Create their flow charts.
+*/
+
+/*for loop - Set a condition first and within the loop,
+execute a block of code until condition is satisfied.
+Best for when you know in advance how many times you need to run the loop.
+*/ 
+
+/*while loop - While a codition is true, run the block of code whithin the while loop.
+Best for when you don't know iterations in advance. 
+*/
+
+/*do-while loop - Guaranteed to run the block of code at least once. 
+Condition is checked after code is ran. 
+*/
