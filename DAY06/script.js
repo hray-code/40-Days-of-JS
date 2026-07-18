@@ -63,20 +63,20 @@ function factorial(n){
 
 let storeNumber = n * (n-1);
     
-    for(i = 2; i < n; i++){
-        storeNumber *= (n-i);
-    }
-    
     if(n === 0 || n === 1){
         storeNumber = 1;
     }else if(n < 0){
         console.log("Enter a positive number.");
-    };
+    };    
 
+    for(i = 2; i < n; i++){
+        storeNumber *= (n-i);
+    };
+    
    console.log(storeNumber); 
 }
 
-factorial(3);
+factorial(4);
 
 /*Task #5: Write a function to Count Vowels in a String.
 Write a function countVowels(str) that counts the number of vowels 
