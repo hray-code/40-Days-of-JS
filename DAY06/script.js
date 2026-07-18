@@ -54,7 +54,31 @@ function isPalindrome(str) {
 
 isPalindrome("racecar");
 
-/*Task #4: Write a function to Count Vowels in a String.
+/*Task #4: Write a Function to Find Factorial of a Number
+Create a function factorial(n) that returns the factorial of n. 
+Example 5! = 5 * 4 * 3 * 2 * 1
+*/
+
+function factorial(n){
+
+let storeNumber = n * (n-1);
+    
+    for(i = 2; i < n; i++){
+        storeNumber *= (n-i);
+    }
+    
+    if(n === 0 || n === 1){
+        storeNumber = 1;
+    }else if(n < 0){
+        console.log("Enter a positive number.");
+    };
+
+   console.log(storeNumber); 
+}
+
+factorial(3);
+
+/*Task #5: Write a function to Count Vowels in a String.
 Write a function countVowels(str) that counts the number of vowels 
 (a, e, i, o, u) in a given string.
 */
@@ -83,3 +107,7 @@ function countVowel(input) {
 };
 
 countVowel("hello");
+
+/*Task #6:
+
+*/
