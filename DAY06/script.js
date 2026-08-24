@@ -76,7 +76,7 @@ let storeNumber = n * (n-1);
    console.log(storeNumber); 
 }
 
-factorial(4);
+factorial(7);
 
 /*Task #5: Write a function to Count Vowels in a String.
 Write a function countVowels(str) that counts the number of vowels 
@@ -143,3 +143,23 @@ output += sentence[0].toUpperCase();
 };
 
 capitalizeWords("capitalize the first letter of each word.");
+
+/* Task #7: Write an IIFE that prints "Hello, JavaScript!" to the console. 
+Here the Second word must be supplied using paramneter and argument.
+*/
+
+(function(word){
+    console.log(`Hello, ${word}`)
+})('Javascript!');
+
+/* Task #8: Write a function greet(name, callback), 
+where callback prints a message using the name parameter.
+*/
+
+function greet(name, callback){
+    callback(name);
+};
+
+greet('Bob', function(passName){
+    console.log(`Hello, ${passName}`);
+});
